@@ -1,0 +1,28 @@
+escadea_lightfade_on:
+  alias: EscadeaLightFadeOn
+  sequence:
+  - service: mqtt.publish
+    data:
+      topic: shellies/ShellyDuoBulb1/light/0/set
+      payload_template: '{ brightness: 80, white: 60, turn: "on" }'
+  - delay: '00:00:00.5'
+  - service: mqtt.publish
+    data:
+      topic: shellies/ShellyDuoBulb2/light/0/set
+      payload_template: '{ brightness: 80, white: 60, turn: "on" }'
+  - delay: '00:00:00.5'
+  - service: mqtt.publish
+    data:
+      topic: shellies/ShellyDuoBulb3/light/0/set
+      payload_template: '{ brightness: 80, white: 60, turn: "on" }'
+  - delay: '00:00:00.5'
+  - service: mqtt.publish
+    data:
+      topic: shellies/ShellyDuoBulb4/light/0/set
+      payload_template: '{ brightness: 80, white: 60, turn: "on" }'
+  - delay: '00:00:00.5'
+  - service: mqtt.publish
+    data:
+      topic: shellies/ShellyDuoBulb5/light/0/set
+      payload_template: '{ brightness: 80, white: 60, turn: "on" }'
+  mode: single
