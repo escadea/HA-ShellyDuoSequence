@@ -3,6 +3,7 @@ The instructions below can be used to configure a Shelly Duo without configuring
 
 Prerequisites:
 - You already have an MQTT server up and running
+- You have a Home Assistant server (and integrated the MQTT server)
 
 ### Connect your Shelly Duo bulbs
 
